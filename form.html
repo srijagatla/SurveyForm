@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form </h1>
+    <p id="description">Thank you for taking the time to filling this form </p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <label id="name-label"> Name: <input id="name" name="name" placeholder="Enter your name" type="text" required /></label>
+        <label id="email-label">Email: <input id="email" name="email" placeholder="Enter your Email" type="email" required /></label>
+        <label id="number-label">Age(optional)<input id="number" name="age" placeholder="Age" type="number" min="18" max="120" /></label>
+        <label for="">Which option best describes your current role?
+          <select id="dropdown" name="referrer">
+            <option value="">Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full time job</option>
+            <option value="3">Full time learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+          </select>
+        </label><br>
+        <legend>Choose your preferred programming language:</legend>
+        <label for="language1"><input type="radio" id="language1" name="language" value="Java" class="inline"/>
+        Java</label>
+        <label for="language2">
+        <input type="radio" id="language2" name="language" value="Python" class="inline"/>
+        Python</label>
+        <label for="language3">
+        <input type="radio" id="language3" name="language" value="JavaScript" class="inline">
+        JavaScript</label>
+        <label for="language4">
+        <input type="radio" id="language4" name="language" value="C++" class="inline" />
+        C++</label>
+        <label for="language5">
+        <input type="radio" id="language5" name="language" value="Ruby" class="inline">
+        Ruby</label>
+        <label for="language6">
+        <input type="radio" id="language6" name="language" value="C#" class="inline"/>
+        C#</label><br>
+        <label for="choose">Which is your intrested Computer Science field?</label>
+        <label for="field1">
+        <input class="inline" id="field1" type="checkbox" checked name="fields" value="ml"/>Machine-learning Engineer
+      </label>
+      <label for="field2">
+        <input class="inline" id="field2" type="checkbox" name="fields" value="fullstack" />Full-stack development
+      </label>
+      <label for="field3">
+      <input class="inline" id="field3" type="checkbox" required name="fields" value="frontend" />
+      Front-end developer</label>
+      <label for="field4">
+        <input class="inline" id="field4" type="checkbox" required name="fields" value="backend"/>Back-end development
+      </label>
+      <label for="field5">
+        <input class="inline" id="field5" type="checkbox" required name="fields" value="ds"/>Data Scientist
+      </label>
+      <label for="field6">
+        <input class="inline" id="field6" type="checkbox" required name="fields" value="cs" />Cyber Security
+      </label>
+      <label for="field7">
+      <input class="inline" id="field7" type="checkbox" required name="fields" value="AI"/>
+      Artificial Intelligence</label>
+      <label for="field8">
+        <input class="inline" id="field8" type="checkbox" required name="fields" value="other"/>Other field
+      </label><br>
+      <label for="bio">Provide Comments or Suggestions:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like full-stack field..."></textarea>
+        </label>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
